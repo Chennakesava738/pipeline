@@ -13,7 +13,7 @@
 	    <spring.version>4.1.4.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-	 	<!-- <sonar.host.url>http://localhost:9001/</sonar.host.url> -->
+	 	<sonar.host.url>http://http://54.144.236.233:9000/</sonar.host.url>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -21,8 +21,8 @@
     	<!-- The destination file for the code coverage report has to be set to the same value
          in the parent pom and in each module pom. Then JaCoCo will add up information in
          the same report, so that, it will give the cross-module code coverage. -->
-     	<!-- <sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
-        <sonar.groovy.binaries>target/classes</sonar.groovy.binaries> -->
+     	<sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+        <sonar.groovy.binaries>target/classes</sonar.groovy.binaries>
   </properties>
 	
   <dependencies>
