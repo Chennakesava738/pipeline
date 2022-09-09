@@ -14,8 +14,8 @@
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 	 	<sonar.host.url>http://http://54.144.236.233:9000/</sonar.host.url>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+       <!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
 
      	<!-- Sonar -->
     	<!-- The destination file for the code coverage report has to be set to the same value
