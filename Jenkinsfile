@@ -3,7 +3,7 @@ node() {
         git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/RaviCharlapalli/raviproject.git'
     }
     stage("Build thru Maven") {
-        def mvnHOME = tool name: 'M2_HOME', type: 'maven'
+        def mvnHOME = tool name: 'maven-3.9.2', type: 'maven'
         def mvnPATH = "${mvnHOME}/bin/mvn"
         sh "${mvnPATH} clean package"
     }
