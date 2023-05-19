@@ -8,7 +8,7 @@ node() {
         sh "${mvnPATH} clean package"
     }
     stage("Creating an Docker Image") {
-        sh "docker build -t ravicharlapalli/scriptive:5.0 ."
+        sh "docker build -t hadopendevops/scripted5.0 ."
     }
     stage("push image to DockerHub") {
         withCredentials([string(credentialsId: 'DockerHubPWD', variable: 'DockerHubPWD')]) {
