@@ -1,4 +1,10 @@
 node() {
+    stage('Install') {
+      steps {
+        sh 'node -v '      
+        sh 'yarn -v'
+        sh 'ember -v'
+      }
     stage("checkout from GIT") {
         git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/RaviCharlapalli/raviproject.git'
     }
